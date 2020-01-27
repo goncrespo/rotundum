@@ -1,0 +1,29 @@
+<h1>BIENVENIDOS</h1>
+
+<h2>¿Estás preparado para formar parte del cambio?</h2>
+
+<h3> ¿Quieres registrarte?</h3>
+<b>Nombre de usuario:</b>
+<span
+  *ngFor="let n of numeros">
+  {{ n }}
+</span>
+
+<br>
+
+Registre un nombre de usuario:
+<input  type="text" [(ngModel)]="secondInput">
+
+<br>
+<br>
+
+<b>Contraseña:</b>
+
+<br>
+
+Ingrese una contraseña (min 8 caracteres):
+<input  type="text" [(ngModel)]="firstInput">
+
+<br>
+<button (click)=letsCheckFirstImput() type=”button”> Aceptar</button><br>
+<b>Notas</b>
